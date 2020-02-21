@@ -1,8 +1,8 @@
-module.exports = (
+module.exports = ({
     port = 4004,
     mock = './mocks/mock.json',
     ip = 'localhost'
-) => {
+}) => {
     const resolve = require('path').resolve
     const http = require('http')
     const mockConfig = require(resolve(mock))

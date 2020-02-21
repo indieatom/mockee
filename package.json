@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/indieatom/mockee.git",
   "author": "Jordan Rocha",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=6.0.0"
+  }
 }

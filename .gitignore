@@ -1,4 +1,4 @@
 /node_modules
-mock.json
 *.log
 *log
+.vscode

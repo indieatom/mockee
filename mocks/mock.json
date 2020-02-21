@@ -1,0 +1,12 @@
+{
+    "GET": {
+        "/users/": {
+            "body": [
+                {"name": "Jordan"}
+            ]
+        }
+    },
+    "POST": {},
+    "PUT": {},
+    "DELETE": {}
+}

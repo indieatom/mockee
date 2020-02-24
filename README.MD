@@ -29,6 +29,42 @@ yarn add @indieatom/mockee
 
 ## Usage
 
+This package is based on a JSON that contains all your mockable request. Must be like:
+
+```json
+{
+    "GET": {
+        "/your/mocked/route/": {
+            "body": [
+                {"name": "Jordan"}
+            ]
+        },
+        "/route/with/expected/code/": {
+            "code": 503
+        }
+    },
+    "POST": {},
+    "PUT": {},
+    "DELETE": {}
+}
+```
+
+That file could be saved in any directory inside your project and must be parsed to `mockee()`.
+
+```js
+const mockee = require('@indieatom/mockee');
+
+// That accept your mock config by params
+const mockeeConfig = {
+    mock: './mock/my_mock.json', // JSON mock file path location
+    port: 1234, // Mock server port (Default 4004)
+    ip: 'localhost' // The IP what server will response
+};
+
+mockee(mockeeConfig);
+
+```
+
 ## Meta
 
 Indie Atom – indieatom@gmail.com

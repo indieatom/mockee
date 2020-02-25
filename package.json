@@ -1,6 +1,6 @@
 {
   "name": "@indieatom/mockee",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A simple JSON based mock server",
   "main": "index.js",
   "repository": "https://github.com/indieatom/mockee.git",

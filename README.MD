@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="427" height="300" src="https://github.com/indieatom/mockee/blob/master/assets/mockee-logo.png">
+  <img width="427" height="300" src="https://raw.githubusercontent.com/indieatom/mockee/master/assets/mockee-logo.png">
 </p>
 
 > A simple JSON based mock server

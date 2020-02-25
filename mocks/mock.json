@@ -1,12 +1,14 @@
 {
-    "GET": {
-        "/users/": {
-            "body": [
-                {"name": "Jordan"}
-            ]
+  "GET": {
+    "/users/": {
+      "body": [
+        {
+          "name": "Jordan"
         }
-    },
-    "POST": {},
-    "PUT": {},
-    "DELETE": {}
+      ]
+    }
+  },
+  "POST": {},
+  "PUT": {},
+  "DELETE": {}
 }

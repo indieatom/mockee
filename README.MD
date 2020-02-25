@@ -35,9 +35,7 @@ This package is based on a JSON that contains all your mockable request. Must be
 {
     "GET": {
         "/your/mocked/route/": {
-            "body": [
-                {"name": "Jordan"}
-            ]
+            "body": [{ "name": "Jordan" }]
         },
         "/route/with/expected/code/": {
             "code": 503
@@ -52,17 +50,16 @@ This package is based on a JSON that contains all your mockable request. Must be
 That file could be saved in any directory inside your project and must be parsed to `mockee()`.
 
 ```js
-const mockee = require('@indieatom/mockee');
+const mockee = require('@indieatom/mockee')
 
 // That accept your mock config by params
 const mockeeConfig = {
     mock: './mock/my_mock.json', // JSON mock file path location
     port: 1234, // Mock server port (Default 4004)
-    ip: 'localhost' // The IP what server will response
-};
+    loader: 'https://github.com' // Optinal server to load data (Set '' to use dafult not found rule)
+}
 
-mockee(mockeeConfig);
-
+mockee(mockeeConfig)
 ```
 
 ## Meta
